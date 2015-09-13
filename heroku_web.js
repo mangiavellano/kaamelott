@@ -1,12 +1,11 @@
 var express = require('express');
-var server  = express();
+var app     = express();
 
-server.use('/assets', express.static(__dirname + '/dist/assets'));
-server.use('/favicon.ico', express.static(__dirname + '/dist/favicon.ico'));
+app.use('/assets', express.static(__dirname + '/dist/assets'));
+// server.use('/favicon.ico', express.static(__dirname + '/dist/favicon.ico'));
 
-server.all('/*', function(req, res) {
-  res.setHeader('Last-Modified', (new Date()).toUTCString());
+app.all('/*', function(req, res) {
   res.sendFile(__dirname + '/dist/index.html');
 });
 
-server.listen(process.env.PORT || 5000);
+app.listen(process.env.PORT || 5000);
