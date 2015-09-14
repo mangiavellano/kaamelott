@@ -13,7 +13,8 @@
   "author": "Anthony Mangiavellano <mangiavellano.anthony@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "jspm": "^0.16.2"
   },
   "devDependencies": {
     "babel": "^5.8.23",
@@ -27,7 +28,6 @@
     "gulp-rev": "^6.0.1",
     "gulp-sass": "^2.0.4",
     "gulp-size": "^2.0.0",
-    "jspm": "^0.16.2",
     "require-dir": "^0.3.0"
   },
   "jspm": {
