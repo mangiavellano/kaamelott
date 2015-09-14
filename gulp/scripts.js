@@ -12,7 +12,7 @@ gulp.task('scripts', function(cb) {
     .loadConfig('./jspm.conf.js')
     .then(function() {
       builder
-        .buildSFX('./src/app/bootstrap', '.tmp/assets/javascripts/bundle.js', { minify: true })
+        .buildSFX('src/app/bootstrap', '.tmp/assets/javascripts/bundle.js', { minify: true })
         .then(function() {
           return cb();
         });
