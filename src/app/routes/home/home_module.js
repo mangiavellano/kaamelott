@@ -31,6 +31,7 @@ const homeModule = angular
     }
   ])
   .controller('HomeController', [
+    '$timeout',
     'QuoteResource',
     'quotes',
     HomeController

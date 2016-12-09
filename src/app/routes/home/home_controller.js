@@ -2,8 +2,9 @@
 
 class HomeController {
 
-  constructor(QuoteResource, quotes) {
+  constructor($timeout, QuoteResource, quotes) {
     this.dep = {
+      '$timeout': $timeout,
       'QuoteResource': QuoteResource
     };
 
@@ -13,8 +14,12 @@ class HomeController {
 
   refreshQuote() {
     const randomIdx  = Math.floor(Math.random() * this._quotes.length);
+    this.transition  = true;
 
-    this.activeQuote = this._quotes[randomIdx];
+    this.dep.$timeout(() => {
+      this.activeQuote = this._quotes[randomIdx];
+      this.transition  = false;
+    }, 100);
   }
 
 }
