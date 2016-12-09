@@ -12,7 +12,3 @@ gulp.task('styles', function() {
     .pipe(gulp.dest('.tmp/assets/stylesheets'))
     .pipe(size());
 });
- 
-gulp.task('sass:watch', function() {
-  gulp.watch('./sass/**/*.scss', ['sass']);
-});

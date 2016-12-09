@@ -1,6 +1,6 @@
 'use strict';
 
-import angular from 'angular';
+// import angular from 'angular';
 
 const quoteResourceModule = angular
   .module('quoteResourceModule', [])

@@ -8,6 +8,4 @@ gulp.task('serve', ['clean', 'styles'], function() {
   gulp.start('watch');
 });
 
-gulp.task('build', ['clean', 'html']);
-
-gulp.task('heroku', ['build']);
+gulp.task('build', ['clean', 'fonts', 'html']);

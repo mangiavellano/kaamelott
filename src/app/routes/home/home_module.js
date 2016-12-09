@@ -1,9 +1,6 @@
 'use strict';
 
-import angular from 'angular';
-import 'angular-ui-router';
-
-import { quoteResourceModule } from '../../services/quote/quote_resource';
+import { quoteResourceModule } from 'src/app/services/quote/quote_resource';
 
 import { HomeController } from './home_controller';
 import template from './home_template.html!text';

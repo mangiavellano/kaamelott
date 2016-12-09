@@ -5,6 +5,8 @@
 
 @import url(https://fonts.googleapis.com/css?family=Noto+Serif);
 
+@import "font-awesome";
+
 html, body {
   margin: 0;
   padding: 0;
@@ -64,6 +66,7 @@ body {
   border: none;
   border-radius: 5px;
   background-color: #555;
+  color: #fff;
   cursor: pointer;
   transition: background-color .2s;
 

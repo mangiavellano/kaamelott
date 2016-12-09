@@ -1,12 +1,10 @@
 'use strict';
 
-import angular     from 'angular';
+import angular from 'angular';
+import 'angular-ui-router';
+
 import { mainApp } from './app';
 
-angular.element(document).ready(function() {
-  angular.bootstrap(document.querySelector('[data-main-app]'), [
-    mainApp.name
-  ], {
-    strictDi: true
-  });
+angular.element(document).ready(() => {
+  angular.bootstrap(document, [mainApp.name], { strictDi: true });
 });
